@@ -1,0 +1,10 @@
+-- default setting for the leaves decayer
+
+-- default behavior for leaves place in worlds, set this to false 
+-- if you want 100% of the leaves to turn into other items
+
+leaves_decayer.decay_into_nothing = true
+
+-- set lower for faster decay or higher for lower decay
+
+leaves_decayer.interval = 5
