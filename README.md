@@ -1,4 +1,5 @@
-==a leaves decayer box mod for minetest==
-codes are copy and paste and edited from lots of places xD
+#leaves decayer box mod for minetest
 
-license under unlicese (public domain)
+put leaves and it will decay into saplings and depending on what other mod is enable, apples and sticks too
+
+license under unlicese http://unlicense.org/
