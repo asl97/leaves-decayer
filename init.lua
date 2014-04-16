@@ -50,16 +50,16 @@ minetest.register_node("leaves_decayer:box", {
 		inv:set_size("dst", 9)
 	end,
 	can_dig = function(pos,player)
-		local meta = minetest.get_meta(pos);
+		local meta = minetest.get_meta(pos)
 		local inv = meta:get_inventory()
 		if inv:is_empty("dst") and inv:is_empty("src") then
 			return true
 		else
 			return false
+		end
 	end
 })
 
--- for some reason, this show up in the unified_inventory :/
 minetest.register_node("leaves_decayer:box_with_leaves", {
 	description = "leaves_decayer",
 	tiles = {"leaves_decayer_box_top_with_leaves.png",
@@ -68,7 +68,7 @@ minetest.register_node("leaves_decayer:box_with_leaves", {
 					"leaves_decayer_box_side.png"},
 	paramtype2 = "facedir",
 	drop = "leaves_decayer:box",
-	groups = {snappy=3},
+	groups = {snappy=3,not_in_creative_inventory=1},
 	legacy_facedir_simple = true,
 	is_ground_content = false,
 	on_construct = function(pos)
